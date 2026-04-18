@@ -7,6 +7,13 @@ import { NBA_TEAM_LOGO_IDS, DEFAULT_FAVORITE_TEAMS } from '@/data/nbaTeams';
 const logoUrl = (team: string) =>
   `https://cdn.nba.com/logos/nba/${NBA_TEAM_LOGO_IDS[team] || '1610612737'}/global/L/logo.svg`;
 
+function playerAvatar(p: { name: string; headshotUrl?: string | null }) {
+  return (
+    p.headshotUrl ||
+    `https://api.dicebear.com/7.x/avataaars/svg?seed=${encodeURIComponent(p.name)}`
+  );
+}
+
 export function FavoritesStrip({ players }: { players: Player[] }) {
   const [favTeams, setFavTeams] = useState<string[]>([]);
 
@@ -20,7 +27,7 @@ export function FavoritesStrip({ players }: { players: Player[] }) {
   }, []);
 
   return (
-    <section className="overflow-hidden border-y border-border bg-background py-6">
+    <section className="overflow-hidden border-t border-border bg-background py-8">
       <div className="container mx-auto px-4">
         <div className="no-scrollbar flex items-center gap-6 overflow-x-auto pb-2">
           <div className="flex flex-shrink-0 items-center gap-2 border-r border-border pr-6">
@@ -47,7 +54,7 @@ export function FavoritesStrip({ players }: { players: Player[] }) {
                 <Link key={p.id} to={`/players/${p.id}`} className="group relative">
                   <div className="h-12 w-12 overflow-hidden rounded-full border-2 border-border shadow-sm transition-all duration-300 group-hover:scale-110 group-hover:border-primary">
                     <img
-                      src={p.headshotUrl}
+                      src={playerAvatar(p)}
                       alt={p.name}
                       className="h-full w-full object-cover object-top"
                     />

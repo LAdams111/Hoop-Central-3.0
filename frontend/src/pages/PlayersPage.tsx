@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
 import { Search } from 'lucide-react';
@@ -9,8 +9,13 @@ import { PlayerCard } from '@/components/PlayerCard';
 export function PlayersPage() {
   const [params] = useSearchParams();
   const teamQ = params.get('team') || '';
-  const [search, setSearch] = useState('');
+  const qParam = params.get('q') || '';
+  const [search, setSearch] = useState(qParam);
   const [position, setPosition] = useState('');
+
+  useEffect(() => {
+    setSearch(qParam);
+  }, [qParam]);
 
   const { data: raw = [], isLoading } = useQuery({
     queryKey: ['players-directory'],
