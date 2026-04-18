@@ -29,7 +29,7 @@ app.use(
     credentials: true,
   })
 );
-app.use(express.json({ limit: '2mb' }));
+app.use(express.json({ limit: '50mb' }));
 
 app.get('/api/health', (_req, res) => {
   res.json({ ok: true, service: 'hoop-central-api' });

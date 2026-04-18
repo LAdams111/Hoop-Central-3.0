@@ -40,7 +40,7 @@ function ingestAuth(req, res, next) {
 /** Bulk upsert for scrapers — send X-API-Key: INGEST_API_KEY */
 router.post('/players', ingestAuth, async (req, res) => {
   try {
-    const arr = z.array(playerIngestSchema).max(500).parse(req.body.players ?? req.body);
+    const arr = z.array(playerIngestSchema).parse(req.body.players ?? req.body);
     const results = [];
     for (const row of arr) {
       const doc = { ...row };
