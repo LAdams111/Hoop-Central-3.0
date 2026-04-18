@@ -131,7 +131,7 @@ router.get('/', async (req, res) => {
     }
     let sort = { name: 1 };
     if (sortBy === 'views') sort = { profileViews: -1, name: 1 };
-    const players = await Player.find(q).sort(sort).limit(500).lean();
+    const players = await Player.find(q).sort(sort).limit(5000).lean();
     res.json(
       players.map((p) => ({
         ...p,
