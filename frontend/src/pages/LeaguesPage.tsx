@@ -1,17 +1,14 @@
 import { useQuery } from '@tanstack/react-query';
 import { LeagueCard, LeagueCardSkeleton } from '@/components/LeagueCard';
-import { api } from '@/lib/api';
-import type { LeagueCatalogEntry } from '@/types';
-
-type Catalog = { domestic: LeagueCatalogEntry[]; international: LeagueCatalogEntry[] };
+import { fetchLeaguesCatalog } from '@/lib/leaguesCatalog';
 
 export function LeaguesPage() {
-  const { data, isLoading } = useQuery({
+  const { data, isPending } = useQuery({
     queryKey: ['leagues-catalog'],
-    queryFn: () => api<Catalog>('/api/leagues/catalog'),
+    queryFn: fetchLeaguesCatalog,
   });
 
-  if (isLoading || !data) {
+  if (isPending || !data) {
     return (
       <div className="container mx-auto space-y-4 px-4 py-8">
         {[1, 2, 3, 4].map((i) => (
@@ -20,6 +17,8 @@ export function LeaguesPage() {
       </div>
     );
   }
+
+  const catalog = data;
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -30,7 +29,7 @@ export function LeaguesPage() {
         </p>
       </div>
       <div className="space-y-3 md:space-y-6">
-        {data.domestic.map((l) => (
+        {catalog.domestic.map((l) => (
           <LeagueCard key={l.slug} league={l} />
         ))}
       </div>
@@ -41,7 +40,7 @@ export function LeaguesPage() {
         </p>
       </div>
       <div className="space-y-3 md:space-y-6">
-        {data.international.map((l) => (
+        {catalog.international.map((l) => (
           <LeagueCard key={l.slug} league={l} />
         ))}
       </div>

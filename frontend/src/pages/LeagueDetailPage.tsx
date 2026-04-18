@@ -3,7 +3,8 @@ import { Link, useParams } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
 import { ChevronRight } from 'lucide-react';
 import { api } from '@/lib/api';
-import type { LeagueCatalogEntry, TeamListItem } from '@/types';
+import { fetchLeaguesCatalog } from '@/lib/leaguesCatalog';
+import type { TeamListItem } from '@/types';
 
 const flag = (code: string) =>
   `https://purecatamphetamine.github.io/country-flag-icons/3x2/${code}.svg`;
@@ -12,12 +13,9 @@ export function LeagueDetailPage() {
   const { slug } = useParams<{ slug: string }>();
   const [q, setQ] = useState('');
 
-  const { data: catalog } = useQuery({
+  const { data: catalog, isPending: catalogPending } = useQuery({
     queryKey: ['leagues-catalog'],
-    queryFn: () =>
-      api<{ domestic: LeagueCatalogEntry[]; international: LeagueCatalogEntry[] }>(
-        '/api/leagues/catalog'
-      ),
+    queryFn: fetchLeaguesCatalog,
   });
 
   const meta = useMemo(() => {
@@ -36,6 +34,17 @@ export function LeagueDetailPage() {
   const filtered = teams.filter((t) => t.name.toLowerCase().includes(q.toLowerCase()));
 
   if (!slug) return null;
+
+  if (catalogPending && !catalog) {
+    return (
+      <div className="container mx-auto px-4 py-12">
+        <Link to="/leagues" className="text-primary hover:underline">
+          ← Leagues
+        </Link>
+        <p className="mt-4 text-muted-foreground">Loading league…</p>
+      </div>
+    );
+  }
 
   if (!meta) {
     return (
