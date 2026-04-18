@@ -20,8 +20,8 @@ export function RosterPage() {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <Link to="/leagues/NBA" className="text-sm text-primary hover:underline">
-        ← Back to league
+      <Link to="/leagues" className="text-sm text-primary hover:underline">
+        ← Leagues
       </Link>
       <h1 className="mt-4 font-display text-4xl font-bold md:text-5xl">{teamName}</h1>
       <p className="font-mono text-sm uppercase tracking-widest text-muted-foreground">

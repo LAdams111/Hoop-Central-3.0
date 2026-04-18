@@ -9,7 +9,7 @@ Express + Mongoose. See root `README.md` for environment variables and `npm run 
 | GET | `/api/health` | Liveness |
 | GET | `/api/leagues/catalog` | Static league metadata (same as production list) |
 | GET | `/api/leagues/:slugOrId` | DB league or catalog fallback |
-| GET | `/api/leagues/:apiKey/teams` | Teams in that league |
+| GET | `/api/leagues/:apiKey/teams` | Teams from `data/teamsCatalog.json` when present; else Mongo |
 | GET | `/api/teams`, `/api/teams/:id` | Teams + roster population |
 | GET | `/api/teams/by-name/:name/roster/:season` | Roster for SPA `/roster/...` |
 | GET | `/api/players` | `?search=&position=&sortBy=views` |

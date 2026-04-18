@@ -1,7 +1,8 @@
 import { Router } from 'express';
 import League from '../models/League.js';
 import Team from '../models/Team.js';
-import { getLeaguesCatalog, findCatalogLeagueBySlug } from '../lib/catalog.js';
+import { getLeaguesCatalog, findCatalogLeagueBySlug, findCatalogLeagueByApiKey } from '../lib/catalog.js';
+import { getTeamsForLeague } from '../lib/teamsCatalog.js';
 
 const router = Router();
 
@@ -13,10 +14,26 @@ router.get('/catalog', (_req, res) => {
 router.get('/:apiKey/teams', async (req, res) => {
   try {
     const { apiKey } = req.params;
-    const league =
+    const catalogMeta = findCatalogLeagueByApiKey(apiKey);
+    const staticTeams = getTeamsForLeague(apiKey);
+
+    const dbLeague =
       (await League.findOne({ apiKey })) || (await League.findOne({ slug: apiKey }));
-    if (!league) return res.json([]);
-    const teams = await Team.find({ league: league._id }).lean();
+    const leagueName = dbLeague?.name || catalogMeta?.name || apiKey;
+
+    if (staticTeams.length > 0) {
+      const out = staticTeams.map((t, i) => ({
+        id: `catalog:${apiKey}:${i}`,
+        name: t.name,
+        season: t.season || '2025-26',
+        logoUrl: t.logoUrl ?? null,
+        league: leagueName,
+      }));
+      return res.json(out);
+    }
+
+    if (!dbLeague) return res.json([]);
+    const teams = await Team.find({ league: dbLeague._id }).lean();
     const out = teams.map((t) => {
       const season = t.seasons?.find((s) => s.year === t.currentSeason) || t.seasons?.[0];
       return {
@@ -24,7 +41,7 @@ router.get('/:apiKey/teams', async (req, res) => {
         name: t.name,
         season: season?.year || t.currentSeason || '2025-26',
         logoUrl: t.logoUrl || null,
-        league: league.name,
+        league: leagueName,
       };
     });
     res.json(out);

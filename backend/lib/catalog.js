@@ -17,3 +17,13 @@ export function findCatalogLeagueBySlug(slug) {
   const { domestic, international } = getLeaguesCatalog();
   return [...domestic, ...international].find((l) => l.slug === slug) || null;
 }
+
+export function findCatalogLeagueByApiKey(apiKey) {
+  if (!apiKey) return null;
+  const { domestic, international } = getLeaguesCatalog();
+  return (
+    [...domestic, ...international].find(
+      (l) => l.apiKey === apiKey || l.slug === apiKey
+    ) || null
+  );
+}
