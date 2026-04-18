@@ -52,4 +52,4 @@ App: `http://localhost:5173` — API requests to `/api/*` are proxied to the bac
 
 ## Default admin login (development)
 
-If you do not set `ADMIN_PASSWORD` or `ADMIN_PASSWORD_HASH`, the API accepts password **`admin`** for `POST /api/admin/login`. Change this before production.
+If you do not set `ADMIN_PASSWORD` or `ADMIN_PASSWORD_HASH`, the API accepts password **`Hockey86`** for `POST /api/admin/login`. Set `ADMIN_PASSWORD` or `ADMIN_PASSWORD_HASH` in production instead of relying on the default.

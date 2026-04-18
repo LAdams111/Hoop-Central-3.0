@@ -17,7 +17,7 @@ router.post('/login', async (req, res) => {
     } else if (plain) {
       ok = password === plain;
     } else {
-      ok = password === 'admin';
+      ok = password === 'Hockey86';
     }
     if (!ok) return res.status(401).json({ message: 'Invalid credentials' });
     const token = jwt.sign(
