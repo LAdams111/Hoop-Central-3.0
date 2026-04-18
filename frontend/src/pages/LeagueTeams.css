@@ -1,216 +1,305 @@
 .league-teams-page {
-  padding: 20px;
-  background: #f5f5f5;
   min-height: 100vh;
+  background: hsl(var(--background));
+  padding-bottom: 3rem;
 }
 
-.back-button {
+.lt-back {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  background: white;
-  border: 2px solid #333;
-  border-radius: 25px;
-  padding: 8px 20px;
-  text-decoration: none;
-  color: #333;
-  font-weight: 600;
+  gap: 6px;
+  margin-bottom: 1.5rem;
   font-size: 14px;
-  margin-bottom: 30px;
-  transition: all 0.3s ease;
+  font-weight: 600;
+  color: hsl(var(--foreground));
+  text-decoration: none;
+  border: 1px solid hsl(var(--border));
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: hsl(var(--card));
+  transition: border-color 0.2s ease, color 0.2s ease;
 }
 
-.back-button:hover {
-  background: #333;
-  color: white;
+.lt-back:hover {
+  border-color: hsl(var(--primary));
+  color: hsl(var(--primary));
 }
 
-.league-header {
-  background: #f0f0f0;
-  border-radius: 12px;
-  padding: 30px;
+.lt-hero {
   display: flex;
-  gap: 30px;
-  align-items: center;
-  margin-bottom: 40px;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid hsl(var(--border));
+  background: hsl(var(--card));
+  margin-bottom: 2rem;
 }
 
-.league-logo {
-  width: 120px;
-  height: 120px;
+@media (min-width: 768px) {
+  .lt-hero {
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+  }
+}
+
+.lt-hero-logo {
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lt-hero-logo img {
+  max-width: 100%;
+  max-height: 100%;
   object-fit: contain;
 }
 
-.league-title {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.league-type {
-  font-size: 12px;
-  color: #ff8c00;
+.lt-hero-logo-fallback {
+  width: 88px;
+  height: 88px;
+  border-radius: 999px;
+  background: hsl(var(--primary) / 0.1);
+  color: hsl(var(--primary));
+  font-family: var(--font-display);
+  font-size: 2rem;
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin: 0;
-}
-
-.league-header h1 {
-  font-size: 36px;
-  font-weight: 900;
-  margin: 0;
-  color: #000;
-}
-
-.league-description {
-  font-size: 14px;
-  color: #666;
-  margin: 0;
-  line-height: 1.5;
-}
-
-.teams-section {
-  background: white;
-  border-radius: 12px;
-  padding: 30px;
-}
-
-.section-header {
   display: flex;
   align-items: center;
-  gap: 15px;
-  margin-bottom: 20px;
+  justify-content: center;
 }
 
-.section-header h2 {
-  font-size: 24px;
-  font-weight: 900;
-  margin: 0;
-  letter-spacing: 1px;
+.lt-hero-text {
+  flex: 1;
+  min-width: 0;
 }
 
-.team-count {
+.lt-tier {
+  font-size: 11px;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: hsl(var(--primary));
+  margin: 0 0 6px;
+}
+
+.lt-hero-text h1 {
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  margin: 0 0 10px;
+  line-height: 1;
+}
+
+.lt-desc {
   font-size: 14px;
-  color: #666;
+  line-height: 1.55;
+  color: hsl(var(--muted-foreground));
+  text-transform: none;
+  font-family: var(--font-body);
+  font-weight: 400;
+  letter-spacing: normal;
+  margin: 0 0 1rem;
+  max-width: 48rem;
 }
 
-.search-input {
+.lt-region-block {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 16px;
+}
+
+.lt-region-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: hsl(var(--muted-foreground));
+}
+
+.lt-region-flags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.lt-flag {
+  width: 28px;
+  height: 20px;
+  border-radius: 4px;
+  border: 1px solid hsl(var(--border) / 0.6);
+  object-fit: cover;
+}
+
+.lt-teams-panel {
+  border: 1px solid hsl(var(--border));
+  border-radius: 12px;
+  background: hsl(var(--card));
+  padding: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .lt-teams-panel {
+    padding: 2rem;
+  }
+}
+
+.lt-teams-head {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.lt-teams-head h2 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.lt-team-count {
+  font-size: 13px;
+  color: hsl(var(--muted-foreground));
+  text-transform: none;
+  font-family: var(--font-body);
+  font-weight: 500;
+  letter-spacing: normal;
+}
+
+.lt-search {
   width: 100%;
-  padding: 12px 15px;
-  border: 2px solid #ddd;
+  padding: 11px 14px;
+  border: 1px solid hsl(var(--border));
   border-radius: 8px;
   font-size: 14px;
-  margin-bottom: 25px;
-  transition: border-color 0.3s ease;
+  margin-bottom: 1.25rem;
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
 }
 
-.search-input:focus {
+.lt-search:focus {
   outline: none;
-  border-color: #ff8c00;
+  border-color: hsl(var(--primary));
+  box-shadow: 0 0 0 3px hsl(var(--primary) / 0.15);
 }
 
-.teams-grid {
+.lt-teams-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 15px;
+  gap: 14px;
 }
 
-.team-card {
-  background: white;
-  border: 2px solid #f0f0f0;
-  border-radius: 12px;
-  padding: 15px;
-  text-decoration: none;
-  color: inherit;
-  transition: all 0.3s ease;
+.lt-team-card {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  position: relative;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid hsl(var(--border));
+  background: hsl(var(--background));
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-.team-card:hover {
-  border-color: #ff8c00;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+.lt-team-card:hover {
+  border-color: hsl(var(--primary) / 0.45);
+  box-shadow: 0 4px 16px hsl(var(--primary) / 0.08);
 }
 
-.team-logo {
-  width: 100%;
+.lt-team-logo {
   height: 120px;
-  background: #f9f9f9;
   border-radius: 8px;
+  background: hsl(var(--muted));
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
 }
 
-.team-logo img {
+.lt-team-logo img {
   width: 100%;
   height: 100%;
   object-fit: contain;
   padding: 10px;
 }
 
-.placeholder {
-  font-size: 40px;
+.lt-team-ph {
+  font-size: 2rem;
 }
 
-.team-info {
+.lt-team-meta {
   flex: 1;
 }
 
-.league-label {
-  font-size: 11px;
-  color: #ff8c00;
-  font-weight: 700;
+.lt-team-league {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  color: hsl(var(--primary));
   margin: 0;
 }
 
-.team-info h3 {
-  font-size: 16px;
+.lt-team-meta h3 {
+  font-size: 1rem;
+  margin: 6px 0 4px;
+  line-height: 1.2;
+  text-transform: none;
+  font-family: var(--font-body);
   font-weight: 700;
-  margin: 5px 0;
-  color: #000;
+  letter-spacing: normal;
+  color: hsl(var(--foreground));
 }
 
-.season {
+.lt-team-season {
   font-size: 12px;
-  color: #999;
+  color: hsl(var(--muted-foreground));
   margin: 0;
+  text-transform: none;
+  font-family: var(--font-body);
+  font-weight: 400;
+  letter-spacing: normal;
 }
 
-.record {
+.lt-team-record {
   font-size: 14px;
-  font-weight: 600;
-  color: #ff8c00;
-  margin: 5px 0 0 0;
+  font-weight: 700;
+  color: hsl(var(--primary));
+  margin: 6px 0 0;
+  text-transform: none;
+  font-family: var(--font-body);
+  letter-spacing: normal;
 }
 
-.team-arrow {
+.lt-team-arrow {
   position: absolute;
   top: 10px;
   right: 10px;
-  font-size: 18px;
-  color: #ff8c00;
+  font-size: 16px;
+  color: hsl(var(--primary));
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.2s ease;
 }
 
-.team-card:hover .team-arrow {
+.lt-team-card:hover .lt-team-arrow {
   opacity: 1;
 }
 
-@media (max-width: 768px) {
-  .league-header {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .teams-grid {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  }
+.lt-empty {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: hsl(var(--muted-foreground));
+  font-size: 15px;
+  line-height: 1.5;
+  text-transform: none;
+  font-family: var(--font-body);
+  font-weight: 400;
+  letter-spacing: normal;
 }

@@ -4,6 +4,7 @@ import axios from 'axios';
 import PlayerList from './components/PlayerList';
 import PlayerDetail from './components/PlayerDetail';
 import Header from './components/Header';
+import Home from './pages/Home';
 import Leagues from './pages/Leagues';
 import LeagueTeams from './pages/LeagueTeams';
 import TeamRoster from './pages/TeamRoster';
@@ -34,13 +35,40 @@ function App() {
       <div className="App">
         <Header />
         <Routes>
+          <Route path="/" element={<Home />} />
           <Route
-            path="/"
-            element={<PlayerList players={players} loading={loading} />}
+            path="/players"
+            element={
+              <PlayerList
+                players={players}
+                loading={loading}
+                variant="directory"
+              />
+            }
           />
-          <Route path="/player/:id" element={<PlayerDetail />} />
+          <Route path="/players/:id" element={<PlayerDetail />} />
+          <Route
+            path="/prospects"
+            element={
+              <PlayerList
+                players={players}
+                loading={loading}
+                variant="prospects"
+              />
+            }
+          />
+          <Route
+            path="/classes"
+            element={
+              <PlayerList
+                players={players}
+                loading={loading}
+                variant="birthYear"
+              />
+            }
+          />
           <Route path="/leagues" element={<Leagues />} />
-          <Route path="/leagues/:leagueId" element={<LeagueTeams />} />
+          <Route path="/leagues/:leagueSlug" element={<LeagueTeams />} />
           <Route path="/teams/:teamId" element={<TeamRoster />} />
         </Routes>
       </div>

@@ -2,6 +2,10 @@ const express = require('express');
 const router = express.Router();
 const League = require('../models/League');
 
+function isObjectIdString(value) {
+  return typeof value === 'string' && /^[a-fA-F0-9]{24}$/.test(value);
+}
+
 // Get all leagues
 router.get('/', async (req, res) => {
   try {
@@ -12,10 +16,16 @@ router.get('/', async (req, res) => {
   }
 });
 
-// Get league by ID
-router.get('/:id', async (req, res) => {
+// Get league by Mongo id or URL slug (e.g. NBA, NCAA)
+router.get('/:idOrSlug', async (req, res) => {
   try {
-    const league = await League.findById(req.params.id);
+    const param = req.params.idOrSlug;
+    let league = null;
+    if (isObjectIdString(param)) {
+      league = await League.findById(param);
+    } else {
+      league = await League.findOne({ slug: param });
+    }
     if (!league) return res.status(404).json({ message: 'League not found' });
     res.json(league);
   } catch (error) {

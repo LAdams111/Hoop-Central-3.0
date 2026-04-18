@@ -41,14 +41,28 @@ function TeamRoster() {
     );
   }
 
+  const leagueId =
+    team.league && typeof team.league === 'object'
+      ? team.league._id
+      : team.league;
+  const leagueSlug =
+    typeof team.league === 'object' && team.league?.slug
+      ? team.league.slug
+      : null;
+  const leagueBackPath = leagueSlug
+    ? `/leagues/${leagueSlug}`
+    : leagueId
+      ? `/leagues/${leagueId}`
+      : '/leagues';
+
   const currentSeasonData = team.seasons?.find((s) => s.year === selectedSeason);
   const roster = currentSeasonData?.roster || [];
 
   return (
     <div className="team-roster-page">
       <div className="container">
-        <Link to="/" className="back-button">
-          ← Back
+        <Link to={leagueBackPath} className="back-button">
+          ← Back to league
         </Link>
 
         <div className="team-header">
@@ -58,6 +72,9 @@ function TeamRoster() {
             )}
           </div>
           <div className="team-info-section">
+            {typeof team.league === 'object' && team.league?.name && (
+              <p className="team-league-kicker">{team.league.name}</p>
+            )}
             <h1>{team.name}</h1>
             <p className="team-subtitle">TEAM ROSTER</p>
             {currentSeasonData && (
@@ -100,7 +117,7 @@ function TeamRoster() {
               roster.map((player) => (
                 <Link
                   key={player._id}
-                  to={`/player/${player._id}`}
+                  to={`/players/${player._id}`}
                   className="player-roster-card"
                 >
                   <div className="player-avatar">

@@ -43,7 +43,7 @@ function PlayerDetail() {
     return (
       <div className="player-detail">
         <div className="container">
-          <Link to="/" className="back-button">
+          <Link to="/players" className="back-button">
             ← Back
           </Link>
           <div className="error">Player not found</div>
@@ -59,7 +59,7 @@ function PlayerDetail() {
   return (
     <div className="player-detail">
       <div className="container">
-        <Link to="/" className="back-button">
+        <Link to="/players" className="back-button">
           ← Back
         </Link>
 

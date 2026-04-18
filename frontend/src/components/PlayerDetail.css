@@ -1,6 +1,6 @@
 .player-detail {
   min-height: 100vh;
-  background: #f5f5f5;
+  background: var(--hc-canvas, #ebe8e2);
   padding: 20px 0;
 }
 

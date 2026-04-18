@@ -1,12 +1,19 @@
 const express = require('express');
 const router = express.Router();
 const Team = require('../models/Team');
+const League = require('../models/League');
 
 // Get all teams or teams by league
 router.get('/', async (req, res) => {
   try {
     let query = {};
-    if (req.query.league) {
+    if (req.query.leagueSlug) {
+      const lg = await League.findOne({ slug: req.query.leagueSlug });
+      if (!lg) {
+        return res.json([]);
+      }
+      query.league = lg._id;
+    } else if (req.query.league) {
       query.league = req.query.league;
     }
     const teams = await Team.find(query).populate('league');
@@ -19,10 +26,12 @@ router.get('/', async (req, res) => {
 // Get team by ID with roster
 router.get('/:id', async (req, res) => {
   try {
-    const team = await Team.findById(req.params.id).populate({
-      path: 'seasons.roster',
-      model: 'Player',
-    });
+    const team = await Team.findById(req.params.id)
+      .populate('league')
+      .populate({
+        path: 'seasons.roster',
+        model: 'Player',
+      });
     if (!team) return res.status(404).json({ message: 'Team not found' });
     res.json(team);
   } catch (error) {

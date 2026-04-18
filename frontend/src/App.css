@@ -4,21 +4,70 @@
   box-sizing: border-box;
 }
 
+/* Theme aligned with hoop-central-production (Tailwind / shadcn tokens) */
+:root {
+  --font-display: 'Teko', sans-serif;
+  --font-body: 'Outfit', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --background: 0 0% 100%;
+  --foreground: 224 71% 4%;
+  --card: 0 0% 98%;
+  --card-foreground: 224 71% 4%;
+  --primary: 24 95% 53%;
+  --primary-foreground: 0 0% 100%;
+  --muted: 210 40% 96.1%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+  --border: 214.3 31.8% 91.4%;
+  --radius: 0.5rem;
+  /* Legacy aliases used by player / roster screens */
+  --hc-orange: hsl(24 95% 53%);
+  --hc-ink: hsl(224 71% 4%);
+  --hc-muted: hsl(215.4 16.3% 46.9%);
+  --hc-line: hsl(214.3 31.8% 91.4%);
+  --hc-surface: hsl(0 0% 100%);
+  --hc-canvas: hsl(0 0% 100%);
+  --hc-orange-soft: hsl(24 95% 53% / 0.12);
+  --hc-radius: 10px;
+  --hc-shadow: 0 8px 24px rgba(15, 15, 15, 0.06);
+}
+
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
 }
 
 .App {
   min-height: 100vh;
-  background: #f5f5f5;
+  background: hsl(var(--background));
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+}
+
+.hc-loading {
+  text-align: center;
+  color: hsl(var(--muted-foreground));
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 72px 20px;
 }
