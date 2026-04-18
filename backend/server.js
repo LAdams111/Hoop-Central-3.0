@@ -46,8 +46,19 @@ app.use((_req, res) => {
 });
 
 async function main() {
-  const uri = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/hoopcentral';
-  await mongoose.connect(uri);
+  const uri = process.env.MONGODB_URI?.trim();
+  const isProdLike =
+    process.env.NODE_ENV === 'production' || Boolean(process.env.RAILWAY_ENVIRONMENT);
+
+  if (!uri && isProdLike) {
+    console.error(
+      '[hoop-central-api] MONGODB_URI is not set. In Railway: add Variables → MONGODB_URI with your MongoDB connection string (Railway Mongo template, MongoDB Atlas, etc.).'
+    );
+    process.exit(1);
+  }
+
+  const mongoUri = uri || 'mongodb://127.0.0.1:27017/hoopcentral';
+  await mongoose.connect(mongoUri);
   console.log('MongoDB connected');
   app.listen(PORT, () => {
     console.log(`API listening on port ${PORT}`);
@@ -56,5 +67,10 @@ async function main() {
 
 main().catch((err) => {
   console.error(err);
+  if (!process.env.MONGODB_URI?.trim()) {
+    console.error(
+      '\n[hoop-central-api] Connection failed and MONGODB_URI is unset — the app defaulted to localhost (127.0.0.1:27017). Set MONGODB_URI to your real database URL.\n'
+    );
+  }
   process.exit(1);
 });
