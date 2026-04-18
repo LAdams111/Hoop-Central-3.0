@@ -1,0 +1,216 @@
+.league-teams-page {
+  padding: 20px;
+  background: #f5f5f5;
+  min-height: 100vh;
+}
+
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: white;
+  border: 2px solid #333;
+  border-radius: 25px;
+  padding: 8px 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  background: #333;
+  color: white;
+}
+
+.league-header {
+  background: #f0f0f0;
+  border-radius: 12px;
+  padding: 30px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.league-logo {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+
+.league-title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.league-type {
+  font-size: 12px;
+  color: #ff8c00;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.league-header h1 {
+  font-size: 36px;
+  font-weight: 900;
+  margin: 0;
+  color: #000;
+}
+
+.league-description {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.teams-section {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.section-header h2 {
+  font-size: 24px;
+  font-weight: 900;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.team-count {
+  font-size: 14px;
+  color: #666;
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-bottom: 25px;
+  transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #ff8c00;
+}
+
+.teams-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.team-card {
+  background: white;
+  border: 2px solid #f0f0f0;
+  border-radius: 12px;
+  padding: 15px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+
+.team-card:hover {
+  border-color: #ff8c00;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.team-logo {
+  width: 100%;
+  height: 120px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.team-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 10px;
+}
+
+.placeholder {
+  font-size: 40px;
+}
+
+.team-info {
+  flex: 1;
+}
+
+.league-label {
+  font-size: 11px;
+  color: #ff8c00;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+.team-info h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 5px 0;
+  color: #000;
+}
+
+.season {
+  font-size: 12px;
+  color: #999;
+  margin: 0;
+}
+
+.record {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ff8c00;
+  margin: 5px 0 0 0;
+}
+
+.team-arrow {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 18px;
+  color: #ff8c00;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.team-card:hover .team-arrow {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .league-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .teams-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
