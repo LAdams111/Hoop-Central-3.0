@@ -1,0 +1,1200 @@
+{
+  "NBA": [
+    {
+      "name": "Atlanta Hawks",
+      "season": "2025-26",
+      "logoUrl": "https://cdn.nba.com/logos/nba/1610612737/global/L/logo.svg"
+    },
+    {
+      "name": "Boston Celtics",
+      "season": "2025-26",
+      "logoUrl": "https://cdn.nba.com/logos/nba/1610612738/global/L/logo.svg"
+    },
+    {
+      "name": "Brooklyn Nets",
+      "season": "2025-26",
+      "logoUrl": "https://cdn.nba.com/logos/nba/1610612751/global/L/logo.svg"
+    },
+    {
+      "name": "Charlotte Hornets",
+      "season": "2025-26",
+      "logoUrl": "https://cdn.nba.com/logos/nba/1610612766/global/L/logo.svg"
+    },
+    {
+      "name": "Chicago Bulls",
+      "season": "2025-26",
+      "logoUrl": "https://cdn.nba.com/logos/nba/1610612741/global/L/logo.svg"
+    },
+    {
+      "name": "Cleveland Cavaliers",
+      "season": "2025-26",
+      "logoUrl": "https://cdn.nba.com/logos/nba/1610612739/global/L/logo.svg"
+    },
+    {
+      "name": "Dallas Mavericks",
+      "season": "2025-26",
+      "logoUrl": "https://cdn.nba.com/logos/nba/1610612742/global/L/logo.svg"
+    },
+    {
+      "name": "Denver Nuggets",
+      "season": "2025-26",
+      "logoUrl": "https://cdn.nba.com/logos/nba/1610612743/global/L/logo.svg"
+    },
+    {
+      "name": "Detroit Pistons",
+      "season": "2025-26",
+      "logoUrl": "https://cdn.nba.com/logos/nba/1610612765/global/L/logo.svg"
+    },
+    {
+      "name": "Golden State Warriors",
+      "season": "2025-26",
+      "logoUrl": "https://cdn.nba.com/logos/nba/1610612744/global/L/logo.svg"
+    },
+    {
+      "name": "Houston Rockets",
+      "season": "2025-26",
+      "logoUrl": "https://cdn.nba.com/logos/nba/1610612745/global/L/logo.svg"
+    },
+    {
+      "name": "Indiana Pacers",
+      "season": "2025-26",
+      "logoUrl": "https://cdn.nba.com/logos/nba/1610612754/global/L/logo.svg"
+    },
+    {
+      "name": "LA Clippers",
+      "season": "2025-26",
+      "logoUrl": "https://cdn.nba.com/logos/nba/1610612746/global/L/logo.svg"
+    },
+    {
+      "name": "Los Angeles Lakers",
+      "season": "2025-26",
+      "logoUrl": "https://cdn.nba.com/logos/nba/1610612747/global/L/logo.svg"
+    },
+    {
+      "name": "Memphis Grizzlies",
+      "season": "2025-26",
+      "logoUrl": "https://cdn.nba.com/logos/nba/1610612763/global/L/logo.svg"
+    },
+    {
+      "name": "Miami Heat",
+      "season": "2025-26",
+      "logoUrl": "https://cdn.nba.com/logos/nba/1610612748/global/L/logo.svg"
+    },
+    {
+      "name": "Milwaukee Bucks",
+      "season": "2025-26",
+      "logoUrl": "https://cdn.nba.com/logos/nba/1610612749/global/L/logo.svg"
+    },
+    {
+      "name": "Minnesota Timberwolves",
+      "season": "2025-26",
+      "logoUrl": "https://cdn.nba.com/logos/nba/1610612750/global/L/logo.svg"
+    },
+    {
+      "name": "New Orleans Pelicans",
+      "season": "2025-26",
+      "logoUrl": "https://cdn.nba.com/logos/nba/1610612740/global/L/logo.svg"
+    },
+    {
+      "name": "New York Knicks",
+      "season": "2025-26",
+      "logoUrl": "https://cdn.nba.com/logos/nba/1610612752/global/L/logo.svg"
+    },
+    {
+      "name": "Oklahoma City Thunder",
+      "season": "2025-26",
+      "logoUrl": "https://cdn.nba.com/logos/nba/1610612760/global/L/logo.svg"
+    },
+    {
+      "name": "Orlando Magic",
+      "season": "2025-26",
+      "logoUrl": "https://cdn.nba.com/logos/nba/1610612753/global/L/logo.svg"
+    },
+    {
+      "name": "Philadelphia 76ers",
+      "season": "2025-26",
+      "logoUrl": "https://cdn.nba.com/logos/nba/1610612755/global/L/logo.svg"
+    },
+    {
+      "name": "Phoenix Suns",
+      "season": "2025-26",
+      "logoUrl": "https://cdn.nba.com/logos/nba/1610612756/global/L/logo.svg"
+    },
+    {
+      "name": "Portland Trail Blazers",
+      "season": "2025-26",
+      "logoUrl": "https://cdn.nba.com/logos/nba/1610612757/global/L/logo.svg"
+    },
+    {
+      "name": "Sacramento Kings",
+      "season": "2025-26",
+      "logoUrl": "https://cdn.nba.com/logos/nba/1610612758/global/L/logo.svg"
+    },
+    {
+      "name": "San Antonio Spurs",
+      "season": "2025-26",
+      "logoUrl": "https://cdn.nba.com/logos/nba/1610612759/global/L/logo.svg"
+    },
+    {
+      "name": "Toronto Raptors",
+      "season": "2025-26",
+      "logoUrl": "https://cdn.nba.com/logos/nba/1610612761/global/L/logo.svg"
+    },
+    {
+      "name": "Utah Jazz",
+      "season": "2025-26",
+      "logoUrl": "https://cdn.nba.com/logos/nba/1610612762/global/L/logo.svg"
+    },
+    {
+      "name": "Washington Wizards",
+      "season": "2025-26",
+      "logoUrl": "https://cdn.nba.com/logos/nba/1610612764/global/L/logo.svg"
+    }
+  ],
+  "WNBA": [
+    {
+      "name": "Atlanta Dream",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/wnba/500/atl.png"
+    },
+    {
+      "name": "Chicago Sky",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/wnba/500/chi.png"
+    },
+    {
+      "name": "Connecticut Sun",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/wnba/500/con.png"
+    },
+    {
+      "name": "Dallas Wings",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/wnba/500/dal.png"
+    },
+    {
+      "name": "Golden State Valkyries",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/wnba/500/gs.png"
+    },
+    {
+      "name": "Indiana Fever",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/wnba/500/ind.png"
+    },
+    {
+      "name": "Las Vegas Aces",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/wnba/500/lv.png"
+    },
+    {
+      "name": "Los Angeles Sparks",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/wnba/500/la.png"
+    },
+    {
+      "name": "Minnesota Lynx",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/wnba/500/min.png"
+    },
+    {
+      "name": "New York Liberty",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/wnba/500/ny.png"
+    },
+    {
+      "name": "Phoenix Mercury",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/wnba/500/phx.png"
+    },
+    {
+      "name": "Seattle Storm",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/wnba/500/sea.png"
+    },
+    {
+      "name": "Washington Mystics",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/wnba/500/was.png"
+    }
+  ],
+  "G-League": [
+    {
+      "name": "Birmingham Squadron",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/d-league/500/birm.png"
+    },
+    {
+      "name": "Capital City Go-Go",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/d-league/500/ccg.png"
+    },
+    {
+      "name": "College Park Skyhawks",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/d-league/500/cps.png"
+    },
+    {
+      "name": "Delaware Blue Coats",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/d-league/500/del.png"
+    },
+    {
+      "name": "Grand Rapids Gold",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/d-league/500/grg.png"
+    },
+    {
+      "name": "Greensboro Swarm",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/d-league/500/grs.png"
+    },
+    {
+      "name": "Iowa Wolves",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/d-league/500/iow.png"
+    },
+    {
+      "name": "Long Island Nets",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/d-league/500/lin.png"
+    },
+    {
+      "name": "Maine Celtics",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/d-league/500/mcc.png"
+    },
+    {
+      "name": "Memphis Hustle",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/d-league/500/mh.png"
+    },
+    {
+      "name": "Motor City Cruise",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/d-league/500/mccr.png"
+    },
+    {
+      "name": "Oklahoma City Blue",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/d-league/500/okc.png"
+    },
+    {
+      "name": "Ontario Clippers",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/d-league/500/ont.png"
+    },
+    {
+      "name": "Osceola Magic",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/d-league/500/osm.png"
+    },
+    {
+      "name": "Raptors 905",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/d-league/500/r9.png"
+    },
+    {
+      "name": "Rip City Remix",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/d-league/500/rcr.png"
+    },
+    {
+      "name": "Salt Lake City Stars",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/d-league/500/slc.png"
+    },
+    {
+      "name": "Santa Cruz Warriors",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/d-league/500/scw.png"
+    },
+    {
+      "name": "Sioux Falls Skyforce",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/d-league/500/sfs.png"
+    },
+    {
+      "name": "South Bay Lakers",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/d-league/500/sbl.png"
+    },
+    {
+      "name": "Stockton Kings",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/d-league/500/stk.png"
+    },
+    {
+      "name": "Texas Legends",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/d-league/500/txl.png"
+    },
+    {
+      "name": "Valley Suns",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/d-league/500/vs.png"
+    },
+    {
+      "name": "Westchester Knicks",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/d-league/500/wkn.png"
+    },
+    {
+      "name": "Windy City Bulls",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/d-league/500/wcb.png"
+    },
+    {
+      "name": "Wisconsin Herd",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/d-league/500/wis.png"
+    },
+    {
+      "name": "Austin Spurs",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/d-league/500/aus.png"
+    },
+    {
+      "name": "Cleveland Charge",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/d-league/500/cle.png"
+    },
+    {
+      "name": "Indiana Mad Ants",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/d-league/500/fw.png"
+    },
+    {
+      "name": "Mexico City Capitanes",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/d-league/500/mxc.png"
+    }
+  ],
+  "NCAA": [
+    {
+      "name": "Duke Blue Devils",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/ncaa/500/150.png"
+    },
+    {
+      "name": "North Carolina Tar Heels",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/ncaa/500/153.png"
+    },
+    {
+      "name": "Kentucky Wildcats",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/ncaa/500/96.png"
+    },
+    {
+      "name": "Kansas Jayhawks",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/ncaa/500/2305.png"
+    },
+    {
+      "name": "Gonzaga Bulldogs",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/ncaa/500/2250.png"
+    },
+    {
+      "name": "UConn Huskies",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/ncaa/500/41.png"
+    },
+    {
+      "name": "Houston Cougars",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/ncaa/500/248.png"
+    },
+    {
+      "name": "Purdue Boilermakers",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/ncaa/500/2509.png"
+    },
+    {
+      "name": "Arizona Wildcats",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/ncaa/500/12.png"
+    },
+    {
+      "name": "Baylor Bears",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/ncaa/500/239.png"
+    },
+    {
+      "name": "Alabama Crimson Tide",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/ncaa/500/333.png"
+    },
+    {
+      "name": "Tennessee Volunteers",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/ncaa/500/2633.png"
+    },
+    {
+      "name": "Creighton Bluejays",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/ncaa/500/156.png"
+    },
+    {
+      "name": "Marquette Golden Eagles",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/ncaa/500/269.png"
+    },
+    {
+      "name": "Michigan State Spartans",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/ncaa/500/127.png"
+    },
+    {
+      "name": "Florida Gators",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/ncaa/500/57.png"
+    },
+    {
+      "name": "Texas Longhorns",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/ncaa/500/251.png"
+    },
+    {
+      "name": "UCLA Bruins",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/ncaa/500/26.png"
+    },
+    {
+      "name": "Villanova Wildcats",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/ncaa/500/222.png"
+    },
+    {
+      "name": "Virginia Cavaliers",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/ncaa/500/258.png"
+    },
+    {
+      "name": "Wisconsin Badgers",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/ncaa/500/275.png"
+    },
+    {
+      "name": "Iowa Hawkeyes",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/ncaa/500/2294.png"
+    },
+    {
+      "name": "Illinois Fighting Illini",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/ncaa/500/356.png"
+    },
+    {
+      "name": "Ohio State Buckeyes",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/ncaa/500/194.png"
+    },
+    {
+      "name": "Miami Hurricanes",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/ncaa/500/2390.png"
+    },
+    {
+      "name": "San Diego State Aztecs",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/ncaa/500/21.png"
+    },
+    {
+      "name": "Florida State Seminoles",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/ncaa/500/52.png"
+    },
+    {
+      "name": "Louisville Cardinals",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/ncaa/500/97.png"
+    },
+    {
+      "name": "Syracuse Orange",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/ncaa/500/183.png"
+    },
+    {
+      "name": "Memphis Tigers",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/ncaa/500/235.png"
+    },
+    {
+      "name": "Xavier Musketeers",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/ncaa/500/2752.png"
+    },
+    {
+      "name": "Saint Mary's Gaels",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/ncaa/500/2608.png"
+    },
+    {
+      "name": "San Francisco Dons",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/ncaa/500/2539.png"
+    },
+    {
+      "name": "Colorado Buffaloes",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/ncaa/500/38.png"
+    },
+    {
+      "name": "Texas A&M Aggies",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/ncaa/500/245.png"
+    },
+    {
+      "name": "Arkansas Razorbacks",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/ncaa/500/8.png"
+    },
+    {
+      "name": "Auburn Tigers",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/ncaa/500/2.png"
+    },
+    {
+      "name": "South Carolina Gamecocks",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/ncaa/500/2579.png"
+    },
+    {
+      "name": "BYU Cougars",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/ncaa/500/252.png"
+    },
+    {
+      "name": "Texas Tech Red Raiders",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/ncaa/500/2641.png"
+    },
+    {
+      "name": "Iowa State Cyclones",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/ncaa/500/66.png"
+    },
+    {
+      "name": "Kansas State Wildcats",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/ncaa/500/2306.png"
+    },
+    {
+      "name": "Oklahoma Sooners",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/ncaa/500/201.png"
+    },
+    {
+      "name": "TCU Horned Frogs",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/ncaa/500/2628.png"
+    },
+    {
+      "name": "West Virginia Mountaineers",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/ncaa/500/277.png"
+    },
+    {
+      "name": "Georgetown Hoyas",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/ncaa/500/46.png"
+    },
+    {
+      "name": "Providence Friars",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/ncaa/500/2507.png"
+    },
+    {
+      "name": "Seton Hall Pirates",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/ncaa/500/2550.png"
+    },
+    {
+      "name": "Butler Bulldogs",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/ncaa/500/2086.png"
+    },
+    {
+      "name": "Dayton Flyers",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/ncaa/500/2168.png"
+    },
+    {
+      "name": "Clemson Tigers",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/ncaa/500/228.png"
+    },
+    {
+      "name": "Northwestern Wildcats",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/ncaa/500/77.png"
+    },
+    {
+      "name": "Washington Huskies",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/ncaa/500/264.png"
+    },
+    {
+      "name": "USC Trojans",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/ncaa/500/30.png"
+    },
+    {
+      "name": "Stanford Cardinal",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/ncaa/500/24.png"
+    },
+    {
+      "name": "Oregon Ducks",
+      "season": "2025-26",
+      "logoUrl": "https://a.espncdn.com/i/teamlogos/ncaa/500/2483.png"
+    }
+  ],
+  "USports": [
+    {
+      "name": "Carleton Ravens",
+      "season": "2025-26",
+      "logoUrl": null
+    },
+    {
+      "name": "UPEI Panthers",
+      "season": "2025-26",
+      "logoUrl": null
+    },
+    {
+      "name": "Dalhousie Tigers",
+      "season": "2025-26",
+      "logoUrl": null
+    },
+    {
+      "name": "UBC Thunderbirds",
+      "season": "2025-26",
+      "logoUrl": null
+    },
+    {
+      "name": "Alberta Golden Bears",
+      "season": "2025-26",
+      "logoUrl": null
+    },
+    {
+      "name": "McGill Redbirds",
+      "season": "2025-26",
+      "logoUrl": null
+    },
+    {
+      "name": "Ottawa Gee-Gees",
+      "season": "2025-26",
+      "logoUrl": null
+    },
+    {
+      "name": "Toronto Varsity Blues",
+      "season": "2025-26",
+      "logoUrl": null
+    },
+    {
+      "name": "Western Mustangs",
+      "season": "2025-26",
+      "logoUrl": null
+    },
+    {
+      "name": "Queen's Gaels",
+      "season": "2025-26",
+      "logoUrl": null
+    },
+    {
+      "name": "Laval Rouge et Or",
+      "season": "2025-26",
+      "logoUrl": null
+    },
+    {
+      "name": "Victoria Vikes",
+      "season": "2025-26",
+      "logoUrl": null
+    }
+  ],
+  "OTE": [
+    {
+      "name": "City Reapers",
+      "season": "2025-26",
+      "logoUrl": null
+    },
+    {
+      "name": "Cold Hearts",
+      "season": "2025-26",
+      "logoUrl": null
+    },
+    {
+      "name": "YNG Dreamerz",
+      "season": "2025-26",
+      "logoUrl": null
+    },
+    {
+      "name": "City Elite",
+      "season": "2025-26",
+      "logoUrl": null
+    },
+    {
+      "name": "RWE",
+      "season": "2025-26",
+      "logoUrl": null
+    }
+  ],
+  "HS": [
+    {
+      "name": "Montverde Academy (FL)",
+      "season": "2025-26",
+      "logoUrl": null
+    },
+    {
+      "name": "Sierra Canyon (CA)",
+      "season": "2025-26",
+      "logoUrl": null
+    },
+    {
+      "name": "IMG Academy (FL)",
+      "season": "2025-26",
+      "logoUrl": null
+    },
+    {
+      "name": "Oak Hill Academy (VA)",
+      "season": "2025-26",
+      "logoUrl": null
+    },
+    {
+      "name": "La Lumiere (IN)",
+      "season": "2025-26",
+      "logoUrl": null
+    },
+    {
+      "name": "Link Academy (MO)",
+      "season": "2025-26",
+      "logoUrl": null
+    },
+    {
+      "name": "AZ Compass Prep (AZ)",
+      "season": "2025-26",
+      "logoUrl": null
+    },
+    {
+      "name": "Wasatch Academy (UT)",
+      "season": "2025-26",
+      "logoUrl": null
+    },
+    {
+      "name": "Long Island Lutheran (NY)",
+      "season": "2025-26",
+      "logoUrl": null
+    },
+    {
+      "name": "Sunrise Christian (KS)",
+      "season": "2025-26",
+      "logoUrl": null
+    }
+  ],
+  "AAU": [
+    {
+      "name": "Mac Irvin Fire",
+      "season": "2025-26",
+      "logoUrl": null
+    },
+    {
+      "name": "Team Takeover",
+      "season": "2025-26",
+      "logoUrl": null
+    },
+    {
+      "name": "Bradley Beal Elite",
+      "season": "2025-26",
+      "logoUrl": null
+    },
+    {
+      "name": "Expressions Elite",
+      "season": "2025-26",
+      "logoUrl": null
+    },
+    {
+      "name": "NYC Rens",
+      "season": "2025-26",
+      "logoUrl": null
+    },
+    {
+      "name": "George Hill All Indy",
+      "season": "2025-26",
+      "logoUrl": null
+    },
+    {
+      "name": "CP25",
+      "season": "2025-26",
+      "logoUrl": null
+    },
+    {
+      "name": "Team Thad",
+      "season": "2025-26",
+      "logoUrl": null
+    },
+    {
+      "name": "Southern Stampede",
+      "season": "2025-26",
+      "logoUrl": null
+    },
+    {
+      "name": "Texas Titans",
+      "season": "2025-26",
+      "logoUrl": null
+    }
+  ],
+  "EuroLeague": [
+    {
+      "name": "Real Madrid",
+      "season": "2025-26",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/en/3/3f/Real_Madrid_Baloncesto_logo.svg"
+    },
+    {
+      "name": "FC Barcelona",
+      "season": "2025-26",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/en/4/47/FC_Barcelona_logo_%282019%29.svg"
+    },
+    {
+      "name": "Olympiacos",
+      "season": "2025-26",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/en/5/5f/Olympiacos_BC_logo.svg"
+    },
+    {
+      "name": "Panathinaikos",
+      "season": "2025-26",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/en/9/9d/Panathinaikos_BC_logo.svg"
+    },
+    {
+      "name": "Maccabi Tel Aviv",
+      "season": "2025-26",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/en/1/1e/Maccabi_Tel_Aviv_BC_logo.svg"
+    },
+    {
+      "name": "Fenerbahçe",
+      "season": "2025-26",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/en/9/9b/Fenerbah%C3%A7e_Men's_Basketball_logo.svg"
+    },
+    {
+      "name": "Anadolu Efes",
+      "season": "2025-26",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/en/6/60/Anadolu_Efes_SK_logo.svg"
+    },
+    {
+      "name": "Virtus Bologna",
+      "season": "2025-26",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/en/6/6b/Virtus_Bologna_logo.svg"
+    },
+    {
+      "name": "Olimpia Milano",
+      "season": "2025-26",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/en/4/49/Pallacanestro_Olimpia_Milano_logo.svg"
+    },
+    {
+      "name": "Partizan",
+      "season": "2025-26",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/en/6/63/KK_Partizan_logo.svg"
+    },
+    {
+      "name": "Crvena zvezda",
+      "season": "2025-26",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/en/4/4f/KK_Crvena_zvezda_logo.svg"
+    },
+    {
+      "name": "Bayern Munich",
+      "season": "2025-26",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/en/1/1f/FC_Bayern_Munich_logo_%282017%29.svg"
+    },
+    {
+      "name": "ASVEL",
+      "season": "2025-26",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/en/8/8a/ASVEL_Basket-logo.png"
+    },
+    {
+      "name": "Baskonia",
+      "season": "2025-26",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/en/3/37/Saski_Baskonia_logo.svg"
+    },
+    {
+      "name": "Valencia Basket",
+      "season": "2025-26",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/en/e/e8/Valencia_Basket_logo.svg"
+    },
+    {
+      "name": "Žalgiris",
+      "season": "2025-26",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/en/5/54/BC_Žalgiris_logo.svg"
+    },
+    {
+      "name": "ALBA Berlin",
+      "season": "2025-26",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/en/4/40/Alba_Berlin_logo.svg"
+    },
+    {
+      "name": "Paris Basketball",
+      "season": "2025-26",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/en/2/2e/Paris_Basketball_logo.png"
+    }
+  ],
+  "ACB": [
+    {
+      "name": "Real Madrid",
+      "season": "2025-26",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/en/3/3f/Real_Madrid_Baloncesto_logo.svg"
+    },
+    {
+      "name": "FC Barcelona",
+      "season": "2025-26",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/en/4/47/FC_Barcelona_logo_%282019%29.svg"
+    },
+    {
+      "name": "Baskonia",
+      "season": "2025-26",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/en/3/37/Saski_Baskonia_logo.svg"
+    },
+    {
+      "name": "Valencia Basket",
+      "season": "2025-26",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/en/e/e8/Valencia_Basket_logo.svg"
+    },
+    {
+      "name": "Unicaja",
+      "season": "2025-26",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/en/8/8a/Unicaja_logo.svg"
+    },
+    {
+      "name": "Joventut Badalona",
+      "season": "2025-26",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/en/1/1a/Joventut_Badalona_logo.svg"
+    },
+    {
+      "name": "Gran Canaria",
+      "season": "2025-26",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/en/7/7c/CB_Gran_Canaria_logo.svg"
+    },
+    {
+      "name": "Murcia",
+      "season": "2025-26",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/en/0/0d/UCAM_Murcia_CB_logo.svg"
+    },
+    {
+      "name": "Tenerife",
+      "season": "2025-26",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/en/4/4d/Iberostar_Tenerife_logo.png"
+    },
+    {
+      "name": "Manresa",
+      "season": "2025-26",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/en/2/2f/Bàsquet_Manresa_logo.svg"
+    },
+    {
+      "name": "Bilbao Basket",
+      "season": "2025-26",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/en/3/3d/Bilbao_Basket_logo.svg"
+    },
+    {
+      "name": "Zaragoza",
+      "season": "2025-26",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/en/6/6a/Basket_Zaragoza_logo.svg"
+    }
+  ],
+  "NBL": [
+    {
+      "name": "Sydney Kings",
+      "season": "2025-26",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/en/8/8a/Sydney_Kings_logo.svg"
+    },
+    {
+      "name": "Melbourne United",
+      "season": "2025-26",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/en/7/7a/Melbourne_United_logo.svg"
+    },
+    {
+      "name": "Perth Wildcats",
+      "season": "2025-26",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/en/4/4a/Perth_Wildcats_logo.svg"
+    },
+    {
+      "name": "Brisbane Bullets",
+      "season": "2025-26",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/en/1/1f/Brisbane_Bullets_logo.svg"
+    },
+    {
+      "name": "Adelaide 36ers",
+      "season": "2025-26",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/en/6/6a/Adelaide_36ers_logo.svg"
+    },
+    {
+      "name": "South East Melbourne Phoenix",
+      "season": "2025-26",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/en/9/9d/South_East_Melbourne_Phoenix_logo.svg"
+    },
+    {
+      "name": "Illawarra Hawks",
+      "season": "2025-26",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/en/2/2f/Illawarra_Hawks_logo.svg"
+    },
+    {
+      "name": "Cairns Taipans",
+      "season": "2025-26",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/en/5/5a/Cairns_Taipans_logo.svg"
+    },
+    {
+      "name": "New Zealand Breakers",
+      "season": "2025-26",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/en/3/3a/New_Zealand_Breakers_logo.svg"
+    },
+    {
+      "name": "Tasmania JackJumpers",
+      "season": "2025-26",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/en/1/1c/Tasmania_JackJumpers_logo.svg"
+    }
+  ],
+  "BAL": [
+    {
+      "name": "Petro de Luanda",
+      "season": "2025-26",
+      "logoUrl": null
+    },
+    {
+      "name": "US Monastir",
+      "season": "2025-26",
+      "logoUrl": null
+    },
+    {
+      "name": "Zamalek SC",
+      "season": "2025-26",
+      "logoUrl": null
+    },
+    {
+      "name": "Cape Town Tigers",
+      "season": "2025-26",
+      "logoUrl": null
+    },
+    {
+      "name": "REG",
+      "season": "2025-26",
+      "logoUrl": null
+    },
+    {
+      "name": "Stade Malien",
+      "season": "2025-26",
+      "logoUrl": null
+    },
+    {
+      "name": "Kwara Falcons",
+      "season": "2025-26",
+      "logoUrl": null
+    },
+    {
+      "name": "Ferroviário de Maputo",
+      "season": "2025-26",
+      "logoUrl": null
+    }
+  ],
+  "CBA": [
+    {
+      "name": "Liaoning Flying Leopards",
+      "season": "2025-26",
+      "logoUrl": null
+    },
+    {
+      "name": "Guangdong Southern Tigers",
+      "season": "2025-26",
+      "logoUrl": null
+    },
+    {
+      "name": "Xinjiang Flying Tigers",
+      "season": "2025-26",
+      "logoUrl": null
+    },
+    {
+      "name": "Zhejiang Golden Bulls",
+      "season": "2025-26",
+      "logoUrl": null
+    },
+    {
+      "name": "Shanghai Sharks",
+      "season": "2025-26",
+      "logoUrl": null
+    },
+    {
+      "name": "Beijing Ducks",
+      "season": "2025-26",
+      "logoUrl": null
+    },
+    {
+      "name": "Shandong Heroes",
+      "season": "2025-26",
+      "logoUrl": null
+    },
+    {
+      "name": "Shenzhen Leopards",
+      "season": "2025-26",
+      "logoUrl": null
+    },
+    {
+      "name": "Jilin Northeast Tigers",
+      "season": "2025-26",
+      "logoUrl": null
+    },
+    {
+      "name": "Nanjing Monkey Kings",
+      "season": "2025-26",
+      "logoUrl": null
+    }
+  ],
+  "BLeague": [
+    {
+      "name": "Alvark Tokyo",
+      "season": "2025-26",
+      "logoUrl": null
+    },
+    {
+      "name": "Chiba Jets",
+      "season": "2025-26",
+      "logoUrl": null
+    },
+    {
+      "name": "Utsunomiya Brex",
+      "season": "2025-26",
+      "logoUrl": null
+    },
+    {
+      "name": "Ryukyu Golden Kings",
+      "season": "2025-26",
+      "logoUrl": null
+    },
+    {
+      "name": "SeaHorses Mikawa",
+      "season": "2025-26",
+      "logoUrl": null
+    },
+    {
+      "name": "Shimane Susanoo Magic",
+      "season": "2025-26",
+      "logoUrl": null
+    },
+    {
+      "name": "Levanga Hokkaido",
+      "season": "2025-26",
+      "logoUrl": null
+    },
+    {
+      "name": "Osaka Evessa",
+      "season": "2025-26",
+      "logoUrl": null
+    },
+    {
+      "name": "Sunrockers Shibuya",
+      "season": "2025-26",
+      "logoUrl": null
+    },
+    {
+      "name": "Yokohama B-Corsairs",
+      "season": "2025-26",
+      "logoUrl": null
+    }
+  ]
+}

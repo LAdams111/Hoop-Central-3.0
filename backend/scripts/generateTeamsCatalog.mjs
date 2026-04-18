@@ -2,7 +2,7 @@
  * One-off generator: node scripts/generateTeamsCatalog.mjs > data/teamsCatalog.json
  * (Or run and copy.) Prefer committing data/teamsCatalog.json so deploys need no extra step.
  */
-import { writeFileSync } from 'fs';
+import { writeFileSync, copyFileSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 
@@ -338,3 +338,11 @@ const out = {
 const path = join(__dirname, '../data/teamsCatalog.json');
 writeFileSync(path, JSON.stringify(out, null, 2));
 console.log('Wrote', path);
+
+const fePath = join(__dirname, '../../frontend/src/data/teamsCatalog.json');
+try {
+  copyFileSync(path, fePath);
+  console.log('Copied to', fePath);
+} catch (e) {
+  console.warn('Skip frontend copy:', e.message);
+}

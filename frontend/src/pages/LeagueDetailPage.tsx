@@ -2,9 +2,8 @@ import { useMemo, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
 import { ChevronRight } from 'lucide-react';
-import { api } from '@/lib/api';
+import { fetchLeagueTeams } from '@/lib/leagueTeams';
 import { fetchLeaguesCatalog } from '@/lib/leaguesCatalog';
-import type { TeamListItem } from '@/types';
 
 const flag = (code: string) =>
   `https://purecatamphetamine.github.io/country-flag-icons/3x2/${code}.svg`;
@@ -26,9 +25,9 @@ export function LeagueDetailPage() {
   const apiKey = meta?.apiKey ?? slug;
 
   const { data: teams = [], isLoading } = useQuery({
-    queryKey: ['league-teams', apiKey],
-    queryFn: () => api<TeamListItem[]>(`/api/leagues/${encodeURIComponent(apiKey!)}/teams`),
-    enabled: !!apiKey,
+    queryKey: ['league-teams', apiKey, meta?.name],
+    queryFn: () => fetchLeagueTeams(apiKey!, meta!.name),
+    enabled: !!apiKey && !!meta,
   });
 
   const filtered = teams.filter((t) => t.name.toLowerCase().includes(q.toLowerCase()));
@@ -99,15 +98,17 @@ export function LeagueDetailPage() {
         />
         {isLoading ? (
           <p className="text-muted-foreground">Loading…</p>
-        ) : filtered.length === 0 ? (
+        ) : teams.length === 0 ? (
           <div className="flex flex-col items-center gap-4 rounded-2xl border-2 border-dashed border-border py-20 text-center">
             <p className="font-display text-2xl uppercase text-muted-foreground">
               No teams found in this league yet
             </p>
             <p className="font-mono text-xs uppercase tracking-widest text-muted-foreground">
-              Teams will appear here as players are added
+              Add teams in the catalog or connect the API with a seeded database
             </p>
           </div>
+        ) : filtered.length === 0 ? (
+          <p className="text-muted-foreground">No teams match your search.</p>
         ) : (
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {filtered.map((t) => (
